@@ -1,18 +1,29 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NewComponent/>
+    <NewComponent2/>
+    <Iteration2/>
+    <Iteration3/>
+    <!-- <Iteration4/> -->
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
+import NewComponent from '@/components/NewComponent.vue'
+import NewComponent2 from '@/components/NewComponent2.vue'
+import Iteration2 from '@/components/Iteration2.vue'
+import Iteration3 from '../components/Iteration3.vue'
+import Iteration4 from '../components/Iteration4.vue'
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
-  }
+    NewComponent,
+    NewComponent2,
+    Iteration2,
+    Iteration3,
+    Iteration4
+}
 }
 </script>
